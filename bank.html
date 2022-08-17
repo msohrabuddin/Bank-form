@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Deposit and Withdraw Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- log in section  -->
+  <header>
+    <h1 class="text-5xl text-center mt-6">Welcome To <span class="font-bold text-sky-700">Bank Of Gabua</span></h1>
+  </header>
+  <main>
+    <section class="bg-blue-200 w-9/12 mx-auto mt-12 p-8">
+      <h3 class="text-3xl mb-5 font-medium">Please Log In</h3>
+      <div>
+        <input class="w-9/12 block mb-2 px-3" type="email" name="" id="user-email" placeholder="Your Email Address">
+        <input class="w-9/12 block mb-2 px-3" type="password" name="" id="user-password"
+          placeholder="Your password Here">
+        <button id="btn-submit"
+          class="bg-blue-600 hover:bg-sky-400 px-7 py-1 text-white font-bold rounded-lg">Submit</button>
+      </div>
+    </section>
+    <!-- Deposit and Withdraw and Balance Section starts  -->
+
+    <h1 class="text-5xl text-center mt-4"> <span class="text-3xl mb-5 font-medium">Your Account</span></h1>
+    <section class="mt-8">
+      <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+        <div class="bg-yellow-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Deposit</h4>
+          <h2 class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-blue-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Withdraw</h4>
+          <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-violet-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Balance</h4>
+          <h2 class="text-5xl font-medium">$<span id="balance-total">1200</span></h2>
+        </div>
+      </div>
+    </section>
+    <!-- ---------- Deposit and Withdraw Section  -->
+    <section class="mt-8 w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-violet-400 p-8 rounded-lg">
+          <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+          <input id="deposit-field" class="w-3/4 px-4 py-3 rounded block mb-2" type="text"
+            placeholder="Your Deposit Amount">
+          <button id="btn-deposit"
+            class="bg-blue-600 hover:bg-sky-400 px-7 py-1 text-white font-bold rounded-lg">Deposit</button>
+        </div>
+        <div class="bg-yellow-400 p-8 rounded-lg">
+          <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+          <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block mb-2" type="text"
+            placeholder="Your Withdraw Amount">
+          <button id="btn-withdraw"
+            class="bg-blue-600 hover:bg-sky-400 px-7 py-1 text-white font-bold rounded-lg">Withdraw</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="allparts.js"></script>
+  <script src="withdraw.js"></script>
+</body>
+
+</html>
